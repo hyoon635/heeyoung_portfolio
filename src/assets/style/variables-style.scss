@@ -1,0 +1,19 @@
+/**
+ variables colors
+*/
+
+$c-white: #ffffff;
+$c-black: #000000;
+
+/**
+ variables font size
+*/
+
+$font-16 : 1rem;
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

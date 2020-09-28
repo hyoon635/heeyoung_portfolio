@@ -1,0 +1,176 @@
+.navigation {
+    visibility: hidden;
+    animation: showNavbar 0s 5s forwards;
+
+  .bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+
+    .name {
+      margin-left: 20px;
+      font-family: "Nanum Myeongjo", serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 4;
+      letter-spacing: 3px;
+      color: #5e5e5e;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+
+    .hambuger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+      transition: transform 330ms ease-out;
+
+      &.open {
+        transform: rotate(-45deg);
+        .hambuger__line {
+          &.start {
+            transform: rotate(-90deg) translateX(3px);
+          }
+          &.end {
+            transform: rotate(-90deg) translateX(-3px);
+          }
+        }
+      }
+
+      &__line {
+        background-color: #000;
+        border-radius: 3px;
+        width: 100%;
+        height: 3px;
+
+        &.half {
+          width: 50%;
+        }
+        &.start {
+          transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+          transform-origin: right;
+        }
+        &.end {
+          align-self: flex-end;
+          transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+
+  @keyframes showNavbar {
+      to {
+          visibility: visible;
+      }
+  }
+}
+
+.menu {
+  padding: 5% 0;
+  text-align: center;
+  z-index: 555;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  &.fixed {
+    position: fixed;
+    width: 100%;
+  }
+  &.active {
+    margin-top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+    z-index: 9999;
+  }
+  &__list {
+    display: inline-block;
+    padding: 0;
+
+    li {
+      display: block;
+      margin: 50px 0;
+      padding: 10px;
+    }
+
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: #c49d64;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        &::before {
+          right: 0;
+        }
+      }
+
+      a {
+        font-family: "Nanum Myeongjo", serif;
+        color: #000;
+        display: block;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 0.7;
+
+        &:hover {
+          color: #c5c5c5;
+        }
+      }
+    }
+  }
+}
+
+.backdrop {
+  background: rgba(255, 255, 255, 0.95);
+  height: 100%;
+  letter-spacing: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 555;
+  visibility: hidden;
+  transition: all 0.3s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+  }
+}
