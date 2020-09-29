@@ -54,7 +54,7 @@ class Home extends React.Component {
               <h2 className="title">
                 <span>I'm</span>
                 <span>Web Publisher</span>
-                <span>Heeyoung</span>
+                <span>Heeyoung.</span>
               </h2>
             </div>
           </div>
