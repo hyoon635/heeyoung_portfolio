@@ -7,7 +7,6 @@ import slide02 from "../assets/imgs/slider02.jpg";
 import slide03 from "../assets/imgs/slider03.jpg";
 import slide04 from "../assets/imgs/slider04.jpg";
 import slide05 from "../assets/imgs/slider05.jpg";
-import slide06 from "../assets/imgs/slider06.jpg";
 
 class Home extends React.Component {
   state = {
@@ -19,8 +18,7 @@ class Home extends React.Component {
     { id: 1, url: slide02 },
     { id: 2, url: slide03 },
     { id: 3, url: slide04 },
-    { id: 4, url: slide05 },
-    { id: 5, url: slide06 }
+    { id: 4, url: slide05 }
   ];
 
   componentDidMount() {
@@ -37,13 +35,29 @@ class Home extends React.Component {
         {isLoading ? (
           <Loading />
         ) : (
-          <Carousel touch={true}>
-            {this.slideImgs.map((slide) => (
-              <Carousel.Item key={slide.id}>
-                <img src={slide.url} alt={slide.id}></img>
-              </Carousel.Item>
-            ))}
-          </Carousel>
+          <div className="home-view">
+            <Carousel touch={true}>
+              {this.slideImgs.map((slide) => (
+                <Carousel.Item key={slide.id}>
+                  <img src={slide.url} alt={slide.id}></img>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+
+            <div className="welcome-text">
+              <h1 className="title">
+                <span>Hello,</span>
+                <span>World!</span>
+                {/* <span>Welcom!</span> */}
+              </h1>
+
+              <h2 className="title">
+                <span>I'm</span>
+                <span>Web Publisher</span>
+                <span>Heeyoung</span>
+              </h2>
+            </div>
+          </div>
         )}
       </main>
     );
