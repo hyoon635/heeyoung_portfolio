@@ -2,11 +2,11 @@ import React from "react";
 import "./Home.scss";
 import Loading from "../components/Loading";
 import Carousel from "react-bootstrap/Carousel";
-import slide01 from "../assets/imgs/slider01.jpg"
-import slide02 from "../assets/imgs/slider02.jpg";
-import slide03 from "../assets/imgs/slider03.jpg";
-import slide04 from "../assets/imgs/slider04.jpg";
-import slide05 from "../assets/imgs/slider05.jpg";
+import slide01 from "../assets/imgs/home/slider01.jpg"
+import slide02 from "../assets/imgs/home/slider02.jpg";
+import slide03 from "../assets/imgs/home/slider03.jpg";
+import slide04 from "../assets/imgs/home/slider04.jpg";
+import slide05 from "../assets/imgs/home/slider05.jpg";
 
 class Home extends React.Component {
   state = {

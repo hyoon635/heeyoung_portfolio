@@ -1,0 +1,132 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "title": "송아리당뇨 앱",
+      "type": "App",
+      "useTech": [
+        { "name": "Ionic", "icon": "https://miro.medium.com/max/704/1*OIsW0n2r3LDwZ-lR_18E9A.png" },
+        {
+          "name": "Angular",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/400px-Angular_full_color_logo.svg.png"
+        },
+        {
+          "name": "sass(scss)",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+        }
+      ],
+      "introduce": "당뇨 환자들을 위한 간편한 헬스케어 서비스입니다.",
+      "link": [
+        "https://apps.apple.com/kr/app/송아리당뇨/id1429335377",
+        "https://play.google.com/store/apps/details?id=com.songaree.diabetes"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "송아리당뇨 Web",
+      "type": "Web",
+      "useTech": [
+        {
+          "name": "Angular",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/400px-Angular_full_color_logo.svg.png"
+        },
+        {
+          "name": "sass(scss)",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+        }
+      ],
+      "introduce": "송아리당뇨 앱에 넣은 데이터를 웹에서 볼 수 있는 서비스입니다.",
+      "link": ["https://songareedm.com/"]
+    },
+    {
+      "id": 2,
+      "title": "송아리당뇨 Doctors",
+      "type": "Web",
+      "useTech": [
+        {
+          "name": "Angular",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/400px-Angular_full_color_logo.svg.png"
+        },
+        {
+          "name": "sass(scss)",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+        }
+      ],
+      "introduce": "송아리당뇨 앱을 사용하는 환자들을 의료진이 관리할 수 있는 서비스입니다.",
+      "link": ["https://songareedoctors.com/login"]
+    },
+    {
+      "id": 3,
+      "title": "송아리앱북 - 임신성당뇨편",
+      "type": "App",
+      "useTech": [
+        { "name": "Ionic", "icon": "https://miro.medium.com/max/704/1*OIsW0n2r3LDwZ-lR_18E9A.png" },
+        {
+          "name": "Angular",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/400px-Angular_full_color_logo.svg.png"
+        },
+        {
+          "name": "sass(scss)",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+        }
+      ],
+      "introduce": "임신성당뇨 환자들을 위한 교육 서비스입니다.",
+      "link": [
+        "https://apps.apple.com/kr/app/송아리앱북-임신성-당뇨편/id1473778853",
+        "https://play.google.com/store/apps/details?id=com.songaree.appbook.gdm"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "송아리앱북 - 제 2형 당뇨병편",
+      "type": "App",
+      "useTech": [
+        { "name": "Ionic", "icon": "https://miro.medium.com/max/704/1*OIsW0n2r3LDwZ-lR_18E9A.png" },
+        {
+          "name": "Angular",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/400px-Angular_full_color_logo.svg.png"
+        },
+        {
+          "name": "sass(scss)",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+        }
+      ],
+      "introduce": "제 2형 당뇨병 환자들을 위한 교육 서비스입니다.",
+      "link": [
+        "https://apps.apple.com/kr/app/송아리앱북-제-2형-당뇨병편/id1529232933",
+        "https://play.google.com/store/apps/details?id=com.songaree.appbook.t2dm"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "송아리아이티 홈페이지",
+      "type": "Web",
+      "useTech": [
+        {
+          "name": "Angular",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/400px-Angular_full_color_logo.svg.png"
+        },
+        {
+          "name": "sass(scss)",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+        }
+      ],
+      "introduce": "회사 홈페이지",
+      "link": ["https://songareeit.com"]
+    },
+    {
+      "id": 6,
+      "title": "Portfolio",
+      "type": "Web",
+      "useTech": [
+        { "name": "React", "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" },
+        {
+          "name": "sass(scss)",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1024px-Sass_Logo_Color.svg.png"
+        }
+      ],
+      "introduce": "개인 포트폴리오 사이트입니다. 포트폴리오 사이트를 만들기 위해 처음으로 리액트를 공부하며 제작했습니다.",
+      "link": ["https://github.com/hyoon635/heeyoung_portfolio.git"]
+    }
+  ]
+}

@@ -2,17 +2,31 @@
  공통 스타일 정의
 */
 
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+button {
+    &:focus {
+        outline: none !important;
+    }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        max-width: 100vw !important;
-    }
+  .container {
+    max-width: 100vw !important;
+  }
 }

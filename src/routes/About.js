@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import mainImg from "../assets/imgs/about_main.jpg";
+import mainImg from "../assets/imgs/about/about_main.jpg";
 
 class About extends React.Component {
   render() {

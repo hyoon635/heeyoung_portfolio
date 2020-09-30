@@ -1,5 +1,4 @@
 @import "../assets/style/variables-style.scss";
-@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
 
 .about {
   position: relative;
@@ -11,9 +10,11 @@
     position: fixed;
     content: "";
     top: 0;
+    left: 0;
     width: 100%;
     height: 64px;
     background-color: $c-white;
+    z-index: 10;
   }
 
   section {
@@ -23,11 +24,6 @@
 
     .img-wrapper {
       width: 100%;
-
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
     }
   }
 
